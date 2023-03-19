@@ -16,20 +16,50 @@ nav {
 }
 
 nav li {
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
+    font-size: 100%;
+    line-height: 30px;
+    height: 30px;
     display: inline-block;
     margin-left: 2.5%;
 }
 
-#logo {
-    float: left;
-    font-size: 280%;
+h1 {
+    text-align: left;
+    font-size: 250%;
     margin-left: 30px;
 }
 
 nav a {
     text-decoration: none;
     color: #F7F7F5;
+}
+
+#menu a:hover {
+    background-color: #F7F7F5;
+    color: #46413B;
+}
+
+/* Main cover image and text */
+
+#hero-outer {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: #fff;
+}
+
+#hero-image {
+    height: 800px;
+    width: 100%;
+    background: url(../images/main-cover.jpg) no-repeat center center;
+
+    /* Aniamtion zoom effect on loading image */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
