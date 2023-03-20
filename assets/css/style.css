@@ -91,30 +91,53 @@ a {
     position:relative;
 }
 
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.1);
-    }
-}
+
 
 #cover-text {
     font-size: 250%;
+    font-family: Amita, sans-serif;
     text-align:center;
     line-height:110%;
     width:100%;
-    background-color: rgba(190,187,182, .5);
-    margin:0 auto;
-    padding:5px;
-    z-index: 1;
+    background-color: rgba(190,187,182, .5); 
+    padding: 5px;
     position: absolute;
     top: 300px;
     
 }  
 
-p {
-    font-family: Raleway, sans-serif;
-    font: 100%;
+#about {
+    text-align: center;
+    color: #46413B;
+    position: absolute;
+
+    height:200px;
+    font-size:100%;
+    overflow:auto;
+    padding-left: 200px;
+    padding-right: 200px;
+
 }
+
+/* footer */
+
+footer {
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
+
