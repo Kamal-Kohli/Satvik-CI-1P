@@ -48,8 +48,9 @@ h1 {
 a {
     font-family: Raleway, sans-serif;
 }
- /* Responsive navigation menu - display (for mobile devices) */
-  @media screen and (max-width: 600px) {
+
+/* For medium screen sizes from 900px wide and down */
+@media screen and (max-width: 900px) {
     .top-nav a, .top-nav-right {
       float: none;
       display: block;
@@ -61,4 +62,17 @@ a {
       left: 0;
       transform: none;
     }
-  }
+}
+
+/* hero image and cover text */
+#hero-container{
+    width: 100%;
+    height: auto;
+    background: url(../images/main-cover.jpg) no-repeat center center;
+   
+}
+#yoga-banner img{
+    width: 100%;
+    height:auto;
+    position:relative;
+}
