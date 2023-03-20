@@ -1,65 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Amita&display=swap');
 
-/* Navigation and Menu*/
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Raleway, sans-serif;
-}
-
-nav {
-    list-style: none;
-    text-align: right;
-    padding: 0;
-    margin: 0;
+/* Add background color to the top navigation */
+.top-nav {
+    position: relative;
     background-color: #46413B;
+    overflow: hidden;
 }
-
-nav li {
-    font-size: 100%;
-    line-height: 30px;
-    height: 30px;
-    display: inline-block;
-    margin-left: 2.5%;
-}
-
-h1 {
-    text-align: left;
-    font-size: 250%;
-    margin-left: 30px;
-}
-
-nav a {
-    text-decoration: none;
+  
+  /* Add style to the navigation bar */
+.top-nav a {
+    float: left;
     color: #F7F7F5;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
-
-#menu a:hover {
+  
+.top-nav a:hover {
+    background-color: #BEBBB6;
+    color: #46413B;
+}
+  
+.top-nav a.active {
     background-color: #F7F7F5;
     color: #46413B;
 }
-
-/* Main cover image and text */
-
-#hero-outer {
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-
-    position: relative;
+  
+.top-nav-centered a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+.top-nav-right {
+    float: right;
 }
 
-#cover-text, #cover-text h2 {
-    color: #fff;
+/* Add font to Header and "a" */
+
+h1 {
+    font-family: Amita, sans-serif;
 }
 
-#hero-image {
-    height: 800px;
-    width: 100%;
-    background: url(../images/main-cover.jpg) no-repeat center center;
-
-    /* Aniamtion zoom effect on loading image */
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
+a {
+    font-family: Raleway, sans-serif;
 }
+ /* Responsive navigation menu - display (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .top-nav a, .top-nav-right {
+      float: none;
+      display: block;
+    }
+  
+    .top-nav-centered a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+  }
