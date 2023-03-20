@@ -65,6 +65,20 @@ a {
 }
 
 /* hero image and cover text */
+
+#hero-outer {
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: #fff;
+}
+
+/* hero image and cover text */
 #hero-container{
     width: 100%;
     height: auto;
@@ -75,4 +89,32 @@ a {
     width: 100%;
     height:auto;
     position:relative;
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+#cover-text {
+    font-size: 250%;
+    text-align:center;
+    line-height:110%;
+    width:100%;
+    background-color: rgba(190,187,182, .5);
+    margin:0 auto;
+    padding:5px;
+    z-index: 1;
+    position: absolute;
+    top: 300px;
+    
+}  
+
+p {
+    font-family: Raleway, sans-serif;
+    font: 100%;
 }
